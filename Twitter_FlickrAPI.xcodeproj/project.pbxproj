@@ -14,6 +14,13 @@
 		EF1190BE1BD94C2E00A77871 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1190BD1BD94C2E00A77871 /* Images.xcassets */; };
 		EF1190C11BD94C2E00A77871 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1190BF1BD94C2E00A77871 /* LaunchScreen.xib */; };
 		EF1190CD1BD94C2E00A77871 /* Twitter_FlickrAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1190CC1BD94C2E00A77871 /* Twitter_FlickrAPITests.m */; };
+		EF1190D71BD94C5D00A77871 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1190D61BD94C5D00A77871 /* Social.framework */; };
+		EF1190D91BD94C6300A77871 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1190D81BD94C6300A77871 /* Accounts.framework */; };
+		EF1190DC1BD94D0700A77871 /* TweetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1190DB1BD94D0700A77871 /* TweetsTableViewController.m */; };
+		EF1190DF1BD953DC00A77871 /* TweetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1190DE1BD953DC00A77871 /* TweetTableViewCell.m */; };
+		EF1190E21BD972AF00A77871 /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1190E11BD972AF00A77871 /* PhotoCollectionViewController.m */; };
+		EF1190E51BD981D400A77871 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1190E41BD981D400A77871 /* CustomCollectionViewCell.m */; };
+		EF11911F1BD9A2F700A77871 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF11911E1BD9A2F700A77871 /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,18 @@
 		EF1190C61BD94C2E00A77871 /* Twitter_FlickrAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Twitter_FlickrAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1190CB1BD94C2E00A77871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF1190CC1BD94C2E00A77871 /* Twitter_FlickrAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Twitter_FlickrAPITests.m; sourceTree = "<group>"; };
+		EF1190D61BD94C5D00A77871 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		EF1190D81BD94C6300A77871 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		EF1190DA1BD94D0700A77871 /* TweetsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsTableViewController.h; sourceTree = "<group>"; };
+		EF1190DB1BD94D0700A77871 /* TweetsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsTableViewController.m; sourceTree = "<group>"; };
+		EF1190DD1BD953DC00A77871 /* TweetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetTableViewCell.h; sourceTree = "<group>"; };
+		EF1190DE1BD953DC00A77871 /* TweetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetTableViewCell.m; sourceTree = "<group>"; };
+		EF1190E01BD972AF00A77871 /* PhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewController.h; sourceTree = "<group>"; };
+		EF1190E11BD972AF00A77871 /* PhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewController.m; sourceTree = "<group>"; };
+		EF1190E31BD981D400A77871 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		EF1190E41BD981D400A77871 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		EF11911D1BD9A2F700A77871 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		EF11911E1BD9A2F700A77871 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1190D91BD94C6300A77871 /* Accounts.framework in Frameworks */,
+				EF1190D71BD94C5D00A77871 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +106,17 @@
 				EF1190B51BD94C2E00A77871 /* AppDelegate.m */,
 				EF1190B71BD94C2E00A77871 /* ViewController.h */,
 				EF1190B81BD94C2E00A77871 /* ViewController.m */,
+				EF1190DA1BD94D0700A77871 /* TweetsTableViewController.h */,
+				EF1190DB1BD94D0700A77871 /* TweetsTableViewController.m */,
+				EF1190E01BD972AF00A77871 /* PhotoCollectionViewController.h */,
+				EF1190E11BD972AF00A77871 /* PhotoCollectionViewController.m */,
+				EF1190DD1BD953DC00A77871 /* TweetTableViewCell.h */,
+				EF1190DE1BD953DC00A77871 /* TweetTableViewCell.m */,
 				EF1190BA1BD94C2E00A77871 /* Main.storyboard */,
+				EF1190E31BD981D400A77871 /* CustomCollectionViewCell.h */,
+				EF1190E41BD981D400A77871 /* CustomCollectionViewCell.m */,
+				EF11911D1BD9A2F700A77871 /* DataManager.h */,
+				EF11911E1BD9A2F700A77871 /* DataManager.m */,
 				EF1190BD1BD94C2E00A77871 /* Images.xcassets */,
 				EF1190BF1BD94C2E00A77871 /* LaunchScreen.xib */,
 				EF1190B01BD94C2E00A77871 /* Supporting Files */,
@@ -96,6 +127,8 @@
 		EF1190B01BD94C2E00A77871 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EF1190D81BD94C6300A77871 /* Accounts.framework */,
+				EF1190D61BD94C5D00A77871 /* Social.framework */,
 				EF1190B11BD94C2E00A77871 /* Info.plist */,
 				EF1190B21BD94C2E00A77871 /* main.m */,
 			);
@@ -220,7 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF1190B91BD94C2E00A77871 /* ViewController.m in Sources */,
+				EF1190DC1BD94D0700A77871 /* TweetsTableViewController.m in Sources */,
 				EF1190B61BD94C2E00A77871 /* AppDelegate.m in Sources */,
+				EF1190E21BD972AF00A77871 /* PhotoCollectionViewController.m in Sources */,
+				EF1190E51BD981D400A77871 /* CustomCollectionViewCell.m in Sources */,
+				EF11911F1BD9A2F700A77871 /* DataManager.m in Sources */,
+				EF1190DF1BD953DC00A77871 /* TweetTableViewCell.m in Sources */,
 				EF1190B31BD94C2E00A77871 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +454,7 @@
 				EF1190D21BD94C2E00A77871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF1190D31BD94C2E00A77871 /* Build configuration list for PBXNativeTarget "Twitter_FlickrAPITests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +463,7 @@
 				EF1190D51BD94C2E00A77871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
